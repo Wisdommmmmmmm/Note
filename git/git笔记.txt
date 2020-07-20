@@ -1,0 +1,53 @@
+//返回上一层
+cd ../
+//查看工作区状态
+git status
+//删除工作区对xx文件的修改
+git checkout -- xx
+//删除untracked files
+git clean -fd
+//将修改提交到暂存区
+git rm/add xx
+//取消add
+git reset (--soft)
+//将暂存区修改提交到分支
+git commit -m "xx"
+//回滚（至少commit两次）
+git reset --hard HEAD^
+//日志
+git log --pretty=oneline
+//包括被删除的commit和reset操作的日志
+git reflog
+
+
+//查看分支
+git branch
+//创建xx分支 
+git branch xx
+//切换xx分支
+git checkout xx
+//当前分支合并xx分支
+git merge xx
+//删除xx分支
+git branch -d xx
+
+
+//远程仓库
+//关联一个远程库
+git remote add origin git@server-name:path/repo-name.git
+//第一次推送master分支的所有内容
+git push -u origin master
+//推送最新修改
+git push origin master
+
+git push <远程主机名> <本地分支名>  <远程分支名> ，例如 git push origin master：refs/for/master
+//如果远程分支被省略，如上则表示将本地分支推送到与之存在追踪关系的远程分支（通常两者同名），如果该远程分支不存在，则会被新建
+git push origin master
+//如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到远程分支，等同于 git push origin --delete master
+git push origin ：refs/for/master 
+//如果当前分支与远程分支存在追踪关系，则本地分支和远程分支都可以省略，将当前分支推送到origin主机的对应分支
+git push origin
+//如果当前分支只有一个远程分支，那么主机名都可以省略，形如 git push，可以使用git branch -r，查看远程的分支名
+git push
+
+
