@@ -55,4 +55,8 @@ git push origin
 //如果当前分支只有一个远程分支，那么主机名都可以省略，形如 git push，可以使用git branch -r，查看远程的分支名
 git push
 
+git pull origin master
+等价于
+git fetch origin master  
+git merge FETCH_HEAD 
 
