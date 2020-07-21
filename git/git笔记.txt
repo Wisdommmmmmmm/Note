@@ -41,9 +41,10 @@ git push -u origin master
 //推送最新修改
 git push origin master
 //查看远程分支信息
-git remote origin
+git remote
 git remote -v
 
+//推送格式
 git push <远程主机名> <本地分支名>  <远程分支名> ，例如 git push origin master：refs/for/master
 //如果远程分支被省略，如上则表示将本地分支推送到与之存在追踪关系的远程分支（通常两者同名），如果该远程分支不存在，则会被新建
 git push origin master
