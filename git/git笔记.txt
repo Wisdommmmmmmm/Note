@@ -26,9 +26,12 @@ git branch xx
 git checkout xx
 //当前分支合并xx分支
 git merge xx
+//合并xx分支，禁用Fast forward，有历史记录
+git merge --no-ff -m "merge with no-ff" xx
 //删除xx分支
 git branch -d xx
-
+//查看分支合并情况
+git log --graph --pretty=oneline --abbrev-commit
 
 //远程仓库
 //关联一个远程库
@@ -37,6 +40,9 @@ git remote add origin git@server-name:path/repo-name.git
 git push -u origin master
 //推送最新修改
 git push origin master
+//查看远程分支信息
+git remote origin
+git remote -v
 
 git push <远程主机名> <本地分支名>  <远程分支名> ，例如 git push origin master：refs/for/master
 //如果远程分支被省略，如上则表示将本地分支推送到与之存在追踪关系的远程分支（通常两者同名），如果该远程分支不存在，则会被新建
