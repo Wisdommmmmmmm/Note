@@ -1,4 +1,5 @@
-1.c++中用nullptr表示指针
+1.c++中用nullptr表示空指针
 2.new(std::nothrow)不抛异常
 3.智能指针...
 4.虚指针、虚函数表和动态绑定
+5.static_cast和dynamic_cast，dynamic_cast进行下行转换(父类指针或对象转换成子类指针或对象)
