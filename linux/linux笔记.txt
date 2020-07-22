@@ -1,5 +1,7 @@
 //返回上一层
 cd ../
+//查看目录
+pwd
 //补全该前缀
 x[TAB]
 //显示所有包含该前缀的命令或文件
@@ -23,8 +25,9 @@ who
 netstat -a
 //查看后台执行程序
 ps -aux
-//升级账号
+//切换用户为root
 su
+su root
 //内存数据写入硬盘
 sync
 //x分钟后关机
@@ -50,3 +53,20 @@ ll
 0是文件类型，123是拥有者权限，456是用户组权限，789是其他人权限
 //显示完整时间
 ls -l --full-time
+//添加用户组x
+groupadd x
+//添加用户x并加入用户组y
+useradd -g y
+//修改用户x的密码
+passwd x
+//修改文件f的用户组为x
+chgrp x f
+//修改文件的用户为x
+chown x f
+//修改文件f权限
+//数字,r-4,w-2,x-1
+chmod 777 f
+//符号
+chmod u=rwx,go=rx f
+//复制文件
+cp 源 目标
