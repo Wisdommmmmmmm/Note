@@ -69,4 +69,4 @@ chmod 777 f
 //符号
 chmod u=rwx,go=rx f
 //复制文件
-cp 源 目标
+cp 源文件 目标
