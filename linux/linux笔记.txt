@@ -73,6 +73,25 @@ chmod 777 f
 //符号
 chmod u=rwx,go=rx f
 //复制文件
-cp 源文件 目标
+cp 源文件或目录 目标文件或目录
 //移动文件
-mv 源文件 目标
+mv 源文件或目录 目标文件或目录
+//删除文件x或目录x
+rm -f x
+rm -rf x
+//查看文件x
+cat x
+tac x(反向查看)
+//修改文件x时间
+touch x(若没有文件x，则创建x)
+//查找执行文件x
+which x
+//查找文件x或目录x
+whereis x
+locate x
+find x
+//查找t天以内变动的文件
+find x -mtime -t
+//用root权限执行命令
+sudo 命令
+
