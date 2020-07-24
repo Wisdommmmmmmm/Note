@@ -41,8 +41,12 @@ shutdown -r nowsy
 reboot
 //发出警告，不关机
 shutdown -k now 'xxxx'
-//查看文件
+//查看x目录文件
+ls x
+//查看当前目录文件
 ls
+//查看目录本身描述
+ls -d
 //查看隐藏文件
 ls -a
 //查看完整文件描述
@@ -70,3 +74,5 @@ chmod 777 f
 chmod u=rwx,go=rx f
 //复制文件
 cp 源文件 目标
+//移动文件
+mv 源文件 目标
