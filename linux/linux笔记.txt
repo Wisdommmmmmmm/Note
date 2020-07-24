@@ -94,4 +94,6 @@ find x
 find x -mtime -t
 //用root权限执行命令
 sudo 命令
+//列出文件系统磁盘使用量
+df -h
 
