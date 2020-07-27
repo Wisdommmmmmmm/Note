@@ -1,0 +1,23 @@
+安装8.2GCC的教程：
+⑴选择一个目录，例如：/opt/
+⑵下载安装包：wget https://ftp.gnu.org/gnu/gcc/gcc-8.2.0/gcc-8.2.0.tar.gz
+⑶解压安装包：tar -zxvf gcc-8.2.0.tar.gz
+⑷进入解压后的文件夹：cd gcc-8.2.0
+⑸下载安装GCC的一些依赖库：./contrib/download_prerequisites
+⑹返回上一级目录，建立编译输出目录：
+cd ../
+mkdir build
+⑺进入输出目录，生成MakeFile文件：
+cd build/
+../gcc-8.2.0/configure --disable-checking --enable-languages=c,c++ --disable-multilib
+⑻执行命令编译，若想加快编译速度，可以采用多核，如：make -j4
+⑼安装：make install
+⑽移除/usr/bin/目录原有的低版本gcc、g++、c++,从/usr/local/bin/软链接高版本的gcc、g++、c++
+安装8.2GDB的教程：
+⑴wget https://mirrors.ustc.edu.cn/gnu/gdb/gdb-8.2.tar.gz
+⑵tar -zxvf gdb-8.2.tar.gz
+⑶cd gdb-8.2;mkdir build;cd build;
+⑷../configure
+⑸make -j16
+⑹make install    [可能会遇到问题：makeinfo: command not found 解决方案：yum install texinfo]
+⑺rm -f /usr/bin/gdb;ln -s /opt/gdb-8.2/build/gdb/gdb /usr/bin/gdb;
