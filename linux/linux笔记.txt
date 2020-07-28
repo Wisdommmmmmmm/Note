@@ -103,3 +103,35 @@ df -h
 ln a b
 //软链接/符号链接：建立一个独立的文件指向关联的文件
 ln -s a b
+//screen操作
+//新建一个名为session的会话并进入
+screen -S session
+//ctrl+a+d使会话后台运行,ctrl+d结束会话
+//列出当前的所有会话
+screen -ls
+//回到名为sesssion这个会话
+screen -r session
+//远程使名为session的会话后台运行
+screen -d session
+//结束名为session会话
+screen -S session -X quit
+//进程管理
+//查看系统的所有进程
+ps aux
+ps -ef
+//查看自己bash相关的进程
+ps -l
+//查找命令含word关键词的进程
+ps -ef|grep word
+//动态查看进程变化,默认按cpu使用率排序
+top//按M按内存排序，按P按cpu排序、
+//查看自己bash的PID
+echo $$
+//查看PID的进程的变化情况
+top -p PID
+//给进程signal信号来控制进程
+kill -signal PID
+//调整进程nice值为n(-20~19)
+renice n PID
+//查port端口的状态
+netstat -np|grep port
