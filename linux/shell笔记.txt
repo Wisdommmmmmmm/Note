@@ -33,3 +33,8 @@ str
 
 字符串长度 echo $(#str)
 提取字符串 echo $(string:pos:len)
+
+显示x到y行 sed -n 'x,yp' file
+显示以空格为分割的第二个参数 awk -F" " '{print $2}' file
+
+看廖学峰bash教程吧。。。。
