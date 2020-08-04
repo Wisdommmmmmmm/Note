@@ -6,3 +6,30 @@ $1 传给shell脚本的第一个参数
 $2 传给shell脚本的第二个参数
 $$ 脚本运行的进程ID号
 $_上一个命令的最后一个参数
+
+数学运算
+expr $a + $b
+expr $a - $b
+expr $a \* $b
+expr $a / $b
+expr $a % $b
+expr $a == $b
+expr $a != $b
+
+关系运算符
+-eq ==
+-ne !=
+-gt >
+-lt <
+-ge >=
+-le <=
+
+字符运算符
+=
+!=
+-z
+-n
+str
+
+字符串长度 echo $(#str)
+提取字符串 echo $(string:pos:len)
