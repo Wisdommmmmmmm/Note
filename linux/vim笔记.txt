@@ -6,8 +6,9 @@
 撤销上一个操作 u
 移动到当前文件第一行 gg/1G
 移动到当前文件最后一行 G
-新开一个窗口 :sp
+新开一个窗口 :sp/vsp
 新开一个窗口并启动另一个文件 :sp filename
+移动光标 ctrl+w + k/j/h/i
 补全当前文件存在的关键词 ctrl+x --> ctrl+n
 补全扩展名的vim内置关键词 ctrl+x --> ctrl+o
 保存后离开 ZZ
