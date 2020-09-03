@@ -1,0 +1,19 @@
+1.安装python3:
+(1)安装依赖：yum install gcc patch libffi-devel python-devel  zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel -y
+(2)下载源代码：wget https://www.python.org/ftp/python/3.6.7/Python-3.6.7.tar.xz
+(3)解压：
+xz -d  Python-3.6.7.tar.xz  #去掉.xz压缩后缀
+tar -xvf Python-3.6.7.tar  #解压缩 
+cd Python-3.6.7
+(4)编译
+./configure --prefix=/usr/local/python3/
+make && make install
+(5)环境变量
+export PATH=$PATH:/usr/local/python3/bin
+2.按装vim8
+(1)下载源码：git clone https://github.com/vim/vim.git
+(2)编译：
+cd vim
+./configure --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-luainterp --enable-python3interp=yes --enable-perlinterp=yes --enable-multibyte=yes --enable-cscope=yes --prefix=/usr/local/src/vim8
+make && make install
+(3)软链接到/usr/local/src/vim8/bin/vim
