@@ -1,3 +1,4 @@
 时间轮和时间堆算法
 雪花算法
-AOI算法
+AOI算法(九宫格和十字链表)
+寻路算法(Dijkstra、A*、Jump Point Search)
