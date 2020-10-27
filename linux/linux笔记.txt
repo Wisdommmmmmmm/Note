@@ -103,6 +103,8 @@ df -h
 ln a b
 //软链接/符号链接：建立一个独立的文件指向关联的文件
 ln -s a b
+//后台运行命令
+nohup 命令 &
 //screen操作
 //新建一个名为session的会话并进入
 screen -S session
@@ -115,6 +117,18 @@ screen -r session
 screen -d session
 //结束名为session会话
 screen -S session -X quit
+//tmux操作
+//新建一个名为session的会话并进入
+tmux new -s session
+//累出当前的所有会话
+tmux ls
+tmux info
+//使会话后台运行
+tmux detach
+//重新接入会话
+tmux attach -t index或session-name
+//退出当前会话
+exit
 //进程管理
 //查看系统的所有进程
 ps aux
