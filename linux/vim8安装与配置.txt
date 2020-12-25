@@ -16,4 +16,5 @@ export PATH=$PATH:/usr/local/python3/bin
 cd vim
 ./configure --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-luainterp --enable-python3interp=yes --enable-perlinterp=yes --enable-multibyte=yes --enable-cscope=yes --prefix=/usr/local/src/vim8
 make && make install
+make时如果出现perl报错可以试一下yum install perl-ExtUtils*
 (3)软链接到/usr/local/src/vim8/bin/vim
