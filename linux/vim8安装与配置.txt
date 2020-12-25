@@ -10,11 +10,6 @@ cd Python-3.6.7
 make && make install
 (5)环境变量
 export PATH=$PATH:/usr/local/python3/bin
-2.按装vim8
-(1)下载源码：git clone https://github.com/vim/vim.git
-(2)编译：
-cd vim
-./configure --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-luainterp --enable-python3interp=yes --enable-perlinterp=yes --enable-multibyte=yes --enable-cscope=yes --prefix=/usr/local/src/vim8
-make && make install
-make时如果出现perl报错可以试一下yum install perl-ExtUtils*
+2.安装vim8
+https://github.com/ycm-core/YouCompleteMe/wiki/Building-Vim-from-source
 (3)软链接到/usr/local/src/vim8/bin/vim
