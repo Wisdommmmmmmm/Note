@@ -12,4 +12,3 @@ make && make install
 export PATH=$PATH:/usr/local/python3/bin
 2.安装vim8
 https://github.com/ycm-core/YouCompleteMe/wiki/Building-Vim-from-source
-(3)软链接到/usr/local/src/vim8/bin/vim
