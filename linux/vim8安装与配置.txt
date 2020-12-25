@@ -12,3 +12,8 @@ make && make install
 export PATH=$PATH:/usr/local/python3/bin
 2.安装vim8
 https://github.com/ycm-core/YouCompleteMe/wiki/Building-Vim-from-source
+3.通过vim-init一键配置
+4.一些问题
+(1)inoremap <c-h> <left>键位映射后会遇到<BS>键不能删除的问题，因为终端默认配置按下<BS>键以后发送的是：^H（ASCII码0x08）
+解决方法：Xshell:Properties->Terminal->Keyboard里，把<BS>设置成127，而 <DEL>设置成VT220 Del
+
