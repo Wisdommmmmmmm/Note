@@ -1,3 +1,4 @@
+#centos
 #1.下载压缩包
 wget http://mirror.hust.edu.cn/gnu/gcc/gcc-9.2.0/gcc-9.2.0.tar.gz
 tar -zxvf gcc-9.2.0.tar.gz
@@ -6,6 +7,7 @@ cd gcc-9.2.0
 #2.安装依赖
 yum install -y gcc
 yum install -y gcc-c++
+yum install -y automake
 #(1)下载依赖库包
 ./contrib/download_prerequisites
 #(2)安装gmp
