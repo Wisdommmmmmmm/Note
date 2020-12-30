@@ -8,6 +8,7 @@ cd gcc-9.2.0
 yum install -y gcc
 yum install -y gcc-c++
 yum install -y automake
+yum install -y bison
 #(1)下载依赖库包
 ./contrib/download_prerequisites
 #(2)安装gmp
