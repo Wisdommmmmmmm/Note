@@ -5,7 +5,6 @@ tar -zxvf gcc-9.2.0.tar.gz
 cd gcc-9.2.0
 
 #2.安装依赖
-yum update
 yum install -y gcc
 yum install -y gcc-c++
 yum install -y automake
