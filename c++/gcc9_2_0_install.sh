@@ -16,6 +16,7 @@ yum install -y texinfo
 yum install -y autoconf
 yum install -y m4
 yum install -y perl
+yum install -y flex
 #(1)下载依赖库包
 ./contrib/download_prerequisites
 #(2)安装gmp
@@ -63,6 +64,11 @@ cd build
 ../configure --prefix=/usr/local/gcc --disable-multilib  --enable-languages=c,c++ --enable-checking=release
 #--with-system-zlib --with-gmp=/usr/local/gmp --with-mpfr=/usr/local/mpfr --with-mpc=/usr/local/mpc --with-isl=/usr/local/isl
 make -j12 > /dev/null
+#如果出现'automake-1.15' is missing on your system.或者'aclocal-1.15' is missing on your system.可以
+#cd /usr/bin 
+#mv automake automake-1.15
+#mv aclocal aclocal-1.15
+#编完再改回去
 make check -j12
 make install -j12
 
