@@ -1,4 +1,5 @@
-#centos
+#cat /etc/redhat-release
+#CentOS Linux release 8.3.2011
 #1.下载压缩包
 wget http://mirror.hust.edu.cn/gnu/gcc/gcc-9.2.0/gcc-9.2.0.tar.gz
 tar -zxvf gcc-9.2.0.tar.gz
@@ -10,6 +11,8 @@ yum install -y gcc-c++
 yum install -y automake
 yum install -y bison
 yum install -y texinfo
+#如果yum找不到包，可以用rpm安装
+#rpm -ivh http://rpmfind.net/linux/centos/8.3.2011/PowerTools/x86_64/os/Packages/texinfo-6.5-6.el8.x86_64.rpm
 #(1)下载依赖库包
 ./contrib/download_prerequisites
 #(2)安装gmp
