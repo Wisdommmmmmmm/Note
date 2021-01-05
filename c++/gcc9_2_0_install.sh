@@ -17,6 +17,8 @@ yum install -y autoconf
 yum install -y m4
 yum install -y perl
 yum install -y flex
+yum install -y http://rpmfind.net/linux/centos/8.3.2011/PowerTools/x86_64/os/Packages/dejagnu-1.6.1-2.el8.noarch.rpm
+yum install -y http://rpmfind.net/linux/centos/8.3.2011/PowerTools/x86_64/os/Packages/autogen-5.18.12-8.el8.x86_64.rpm
 #(1)下载依赖库包
 ./contrib/download_prerequisites
 #(2)安装gmp
