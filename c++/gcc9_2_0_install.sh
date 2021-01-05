@@ -21,6 +21,7 @@ yum install -y http://rpmfind.net/linux/centos/8.3.2011/PowerTools/x86_64/os/Pac
 yum install -y http://rpmfind.net/linux/centos/8.3.2011/PowerTools/x86_64/os/Packages/autogen-5.18.12-8.el8.x86_64.rpm
 #(1)下载依赖库包
 ./contrib/download_prerequisites
+#以下为手动安装，不建议手动安装
 #(2)安装gmp
 #tar -jxvf gmp-6.1.0.tar.bz2
 #cd gmp-6.1.0
