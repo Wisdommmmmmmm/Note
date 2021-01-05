@@ -11,7 +11,7 @@ yum install -y gcc-c++
 yum install -y automake
 yum install -y bison
 yum install -y texinfo
-#如果yum找不到包，可以用rpm安装
+#如果yum找不到包，可以用rpm二进制文件安装
 #rpm -ivh http://rpmfind.net/linux/centos/8.3.2011/PowerTools/x86_64/os/Packages/texinfo-6.5-6.el8.x86_64.rpm
 yum install -y autoconf
 yum install -y m4
