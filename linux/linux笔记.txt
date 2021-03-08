@@ -149,3 +149,4 @@ kill -signal PID
 renice n PID
 //查port端口的状态
 netstat -np|grep port
+lsof -i:port
